@@ -122,11 +122,13 @@ $(document).ready(function($) {
 	try {
 		var mapContainer = $('.map');
 		mapContainer.gmap3({
-			infowindow:{
-				address:"http://goo.gl/maps/Mt7xc",
-				options:{
-					content: "London, Farringdon st!"
-				},
+
+			infowindow: {
+				address: "http://goo.gl/maps/RhsfM",  // Enlace de Google Maps para La Paz, Bolivia
+  				options: {
+    				content: "La Paz, Bolivia"  // Contenido del InfoWindow actualizado
+  				},
+
 				events:{
 					closeclick: function(infowindow){
 						alert("closing : " + infowindow.getContent());
